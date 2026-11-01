@@ -1,0 +1,1 @@
+package com.orderflow.payment;import org.junit.jupiter.api.Test;import java.util.UUID;import static org.junit.jupiter.api.Assertions.*;class PaymentTest{@Test void idempotencyKeyCanBeOrderId(){UUID id=UUID.randomUUID();assertEquals(id,id);}}

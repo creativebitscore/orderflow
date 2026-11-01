@@ -1,0 +1,1 @@
+package com.orderflow.auth;import org.junit.jupiter.api.Test;import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;import static org.junit.jupiter.api.Assertions.*;class AuthApplicationTest{@Test void hashesPasswords(){var e=new BCryptPasswordEncoder();var h=e.encode("correct-horse");assertNotEquals("correct-horse",h);assertTrue(e.matches("correct-horse",h));}}
